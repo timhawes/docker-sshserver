@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/usr/local/sbin/syslogd.pl >/proc/1/fd/1 & 
+/usr/local/sbin/syslogd.py >/proc/1/fd/1 & 
 
 if [ -n "$CRYPTED_ROOT_PASSWORD" ]; then
   usermod -p "$CRYPTED_ROOT_PASSWORD" root
